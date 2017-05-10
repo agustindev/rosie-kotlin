@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.q4tech.essen.ci"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    //google support
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.0.0'
+    //dialogs
+    compile 'com.afollestad.material-dialogs:core:0.9.4.4'
+    compile 'com.afollestad.material-dialogs:commons:0.9.4.4'
+    //bluetooth
+    compile 'com.polidea.rxandroidble:rxandroidble:1.2.2'
+    //rxjava
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.9'
+    //architecture
+    compile 'com.karumi.rosie:rosie:3.0.0'
+    //syntax
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.2-3"
+    //injection
+    provided 'com.squareup.dagger:dagger-compiler:1.2.2'
+    kapt 'com.squareup.dagger:dagger-compiler:1.2.2'
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:23.4.0'
+}

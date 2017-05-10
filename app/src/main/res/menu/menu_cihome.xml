@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionRecipeList"
+        android:enabled="true"
+        android:icon="@mipmap/ic_home_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+    <item
+        android:id="@+id/actionRecipeSearch"
+        android:enabled="true"
+        android:icon="@mipmap/ic_search_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+    <item
+        android:id="@+id/actionUserNotification"
+        android:enabled="true"
+        android:icon="@mipmap/ic_notifications_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+    <item
+        android:id="@+id/actionUserProfile"
+        android:enabled="true"
+        android:icon="@mipmap/ic_person_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+</menu>
