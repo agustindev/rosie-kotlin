@@ -1,5 +1,6 @@
-package com.q4tech.essen.ci
+package com.q4tech.essen.ci.mvp.module
 
+import com.q4tech.essen.ci.mvp.view.activity.CIHomeActivity
 import dagger.*
 
 /**

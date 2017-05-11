@@ -1,4 +1,4 @@
-package com.q4tech.essen.ci
+package com.q4tech.essen.ci.mvp.view.fragment
 
 import com.karumi.rosie.view.RosieFragment
 

@@ -1,0 +1,419 @@
+[
+    {  
+        "id":1,
+        "title":"Tarta de berenjenas y tomates",
+        "description":"Colocar aquí la descripción de la tarta de berenjenas y tomates.",
+        "prepTime":"45 a 60'",
+        "imageId":"receta1",
+        "resources":[  
+            "2024",
+            "2224"
+        ],
+        "servings":{  
+            "options":[  
+                6
+            ],
+            "default":6
+        },
+        "categories":{  
+            "tipoComida":"Almuerzo"
+        },
+        "preparations":{
+            "p1":{  
+                "name":"Masa",
+                "steps":{  
+                    "p1s010":{  
+                        "type":"standard",
+                        "task":"En un bowl colocamos la harina, la sal, el huevo, el aceite y el agua. Mezclamos hasta formar una masa tierna. Dejamos descansar en la heladera mientras preparamos el relleno.",
+                        "imageId":"prepmasatarta",
+                        "dependencies":[  
+
+                        ],
+                        "servings":{  
+
+                        }
+                    },
+                    "p1s020":{  
+                        "type":"checkElement",
+                        "task":"Colocamos la sarten sobre la Cocinita Essen.",
+                        "imageId":"item2024",
+                        "dependencies":[  
+                            "p1s010",
+                            "p2s060",
+                            "p3s010"
+                        ],
+                        "servings":{  
+                            "6":{  
+                                "timer":0,
+                                "resource":"2024",
+                                "device":[  
+                                    {  
+                                        "timer":0,
+                                        "weight":50,
+                                        "temp":0,
+                                        "power":0,
+                                        "flags":[  
+
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "p1s025":{  
+                        "type":"standard",
+                        "task":"Estiramos la masa y la colocamos en la sarten enharinada.",
+                        "imageId":"sartenmasatarta",
+                        "dependencies":[  
+                            "p1s020"
+                        ],
+                        "servings":{  
+
+                        }
+                    },
+                    "p1s030":{  
+                        "type":"standard",
+                        "task":"Volcamos el relleno sobre la masa y por encima derramamos el ligue en forma pareja.",
+                        "imageId":"rellenomasatarta",
+                        "dependencies":[  
+                            "p1s025"
+                        ],
+                        "servings":{  
+
+                        }
+                    },
+                    "p1s040":{  
+                        "type":"check",
+                        "task":"Tapamos la sarten.",
+                        "imageId":"tapamasatarta",
+                        "dependencies":[  
+                            "p1s030"
+                        ],
+                        "servings":{  
+                            "6":{  
+                                "timer":0,
+                                "resource":"2024",
+                                "device":[  
+                                    {  
+                                        "timer":0,
+                                        "weight":20,
+                                        "temp":0,
+                                        "power":0,
+                                        "flags":[  
+
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "p1s050":{  
+                        "type":"cook",
+                        "task":"Iniciamos la cocción.",
+                        "imageId":"startcooking",
+                        "dependencies":[  
+                            "p1s040"
+                        ],
+                        "servings":{  
+                            "6":{  
+                                "timer":35,
+                                "resource":"2024",
+                                "device":[  
+                                    {  
+                                        "timer":35,
+                                        "weight":0,
+                                        "temp":0,
+                                        "power":1000,
+                                        "flags":[  
+                                            "flash",
+                                            "beep"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "p1s060":{  
+                        "type":"standard",
+                        "task":"Desmoldamos y servimos.",
+                        "imageId":"fintarta",
+                        "dependencies":[  
+                            "p1s050"
+                        ],
+                        "servings":{  
+
+                        }
+                    }
+                },
+                "ingredients":[  
+                    {  
+                        "item":"Harina leudante",
+                        "qty":{  
+                            "6":"250 gr."
+                        }
+                    },
+                    {  
+                        "item":"Huevo",
+                        "qty":{  
+                            "6":"1 un."
+                        }
+                    },
+                    {  
+                        "item":"Sal",
+                        "qty":{  
+                            "6":"1 pizca"
+                        }
+                    },
+                    {  
+                        "item":"Agua",
+                        "qty":{  
+                            "6":"4 cdas."
+                        }
+                    },
+                    {  
+                        "item":"Aceite de oliva",
+                        "qty":{  
+                            "6":"4 cdas."
+                        }
+                    }
+                ]
+            },
+            "p2":{  
+                "name":"Relleno",
+                "steps":{  
+                    "p2s010":{  
+                        "type":"checkElement",
+                        "task":"Colocamos la sartén sobre la Cocinita Essen.",
+                        "imageId":"item2224",
+                        "dependencies":[  
+                            "p1s010"
+                        ],
+                        "servings":{  
+                            "6":{  
+                                "timer":0,
+                                "resource":"2224",
+                                "device":[  
+                                    {  
+                                        "timer":0,
+                                        "weight":50,
+                                        "temp":0,
+                                        "power":0,
+                                        "flags":[  
+
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "p2s020":{  
+                        "type":"cook",
+                        "task":"Agregamos el aceite e iniciamos la cocción.",
+                        "imageId":"iniciorelleno",
+                        "dependencies":[  
+                            "p2s010"
+                        ],
+                        "servings":{  
+                            "6":{  
+                                "timer":2,
+                                "resource":"2224",
+                                "device":[  
+                                    {  
+                                        "timer":2,
+                                        "weight":0,
+                                        "temp":0,
+                                        "power":1500,
+                                        "flags":[  
+                                            "flash",
+                                            "beep"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "p2s030":{  
+                        "type":"cook",
+                        "task":"Agregamos las berenjenas y continuamos la cocción.",
+                        "imageId":"berenjenasrelleno",
+                        "dependencies":[  
+                            "p2s020"
+                        ],
+                        "servings":{  
+                            "6":{  
+                                "timer":7,
+                                "resource":"2224",
+                                "device":[  
+                                    {  
+                                        "timer":7,
+                                        "weight":0,
+                                        "temp":0,
+                                        "power":1500,
+                                        "flags":[  
+                                            "flash",
+                                            "beep"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "p2s040":{  
+                        "type":"cook",
+                        "task":"Agregamos los tomates cherry, la sal y el oregano y continuamos la cocción.",
+                        "imageId":"tomatesrelleno",
+                        "dependencies":[  
+                            "p2s030"
+                        ],
+                        "servings":{  
+                            "6":{  
+                                "timer":6,
+                                "resource":"2224",
+                                "device":[  
+                                    {  
+                                        "timer":6,
+                                        "weight":0,
+                                        "temp":0,
+                                        "power":1500,
+                                        "flags":[  
+                                            "flash",
+                                            "beep"
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "p2s050":{  
+                        "type":"check",
+                        "task":"Retiramos la sartén de la cocina.",
+                        "imageId":"retirarelleno",
+                        "dependencies":[  
+                            "p2s040"
+                        ],
+                        "servings":{  
+                            "0":{  
+                                "timer":0,
+                                "resource":"2224",
+                                "device":[  
+                                    {  
+                                        "timer":0,
+                                        "weight":-200,
+                                        "temp":0,
+                                        "power":0,
+                                        "flags":[  
+
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "p2s060":{  
+                        "type":"standard",
+                        "task":"Agregamos el queso mozzarella y reservamos.",
+                        "imageId":"finrelleno",
+                        "dependencies":[  
+                            "p2s050"
+                        ],
+                        "servings":{  
+
+                        }
+                    }
+                },
+                "ingredients":[  
+                    {  
+                        "item":"Berenjenas",
+                        "qty":{  
+                            "6":"500 gr."
+                        }
+                    },
+                    {  
+                        "item":"Tomates cherry",
+                        "qty":{  
+                            "6":"300 gr."
+                        }
+                    },
+                    {  
+                        "item":"Queso mozzarella",
+                        "qty":{  
+                            "6":"150 gr."
+                        }
+                    },
+                    {  
+                        "item":"Aceite de oliva extra virgen",
+                        "qty":{  
+                            "6":"2 cdas."
+                        }
+                    },
+                    {  
+                        "item":"Sal",
+                        "qty":{  
+                            "6":"1 pizca"
+                        }
+                    },
+                    {  
+                        "item":"Oregano",
+                        "qty":{  
+                            "6":"A gusto"
+                        }
+                    }
+                ]
+            },
+            "p3":{  
+                "name":"Ligue",
+                "steps":{  
+                    "p3s010":{  
+                        "type":"standard",
+                        "task":"En un bowl colocamos los huevos, el queso crema, la crema de leche, la leche, la sal y pimienta. Mezclamos.",
+                        "imageId":"liguetarta",
+                        "dependencies":[  
+                        
+                        ],
+                        "servings":{  
+                        
+                        }
+                    }
+                },
+                "ingredients":[  
+                    {  
+                        "item":"Huevo",
+                        "qty":{  
+                            "6":"3 un."
+                        }
+                    },
+                    {  
+                        "item":"Queso crema",
+                        "qty":{  
+                            "6":"3 cdas."
+                        }
+                    },
+                    {  
+                        "item":"Crema de leche",
+                        "qty":{  
+                            "6":"100 cc."
+                        }
+                    },
+                    {  
+                        "item":"Leche",
+                        "qty":{  
+                            "6":"50 cc."
+                        }
+                    },
+                    {  
+                        "item":"Sal",
+                        "qty":{  
+                            "6":"A gusto"
+                        }
+                    },
+                    {  
+                        "item":"Pimienta",
+                        "qty":{  
+                            "6":"A gusto"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

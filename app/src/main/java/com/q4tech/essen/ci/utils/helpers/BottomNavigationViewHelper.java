@@ -1,4 +1,4 @@
-package com.q4tech.essen.ci;
+package com.q4tech.essen.ci.utils.helpers;
 
 import android.support.design.internal.*;
 import android.support.design.widget.*;
@@ -12,7 +12,7 @@ import java.lang.reflect.*;
 
 public class BottomNavigationViewHelper {
 
-    static void removeShiftMode(BottomNavigationView view) {
+    public static void removeShiftMode(BottomNavigationView view) {
         BottomNavigationMenuView menuView = (BottomNavigationMenuView) view.getChildAt(0);
         try {
             Field shiftingMode = menuView.getClass().getDeclaredField("mShiftingMode");
