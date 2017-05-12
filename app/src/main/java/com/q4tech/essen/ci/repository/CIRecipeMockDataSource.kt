@@ -18,12 +18,13 @@ package com.q4tech.essen.ci.repository
 
 import android.content.Context
 import com.google.gson.Gson
+import com.karumi.rosie.daggerutils.ForActivity
 import com.karumi.rosie.repository.datasource.*
 import com.q4tech.essen.ci.domain.model.*
 import com.q4tech.essen.ci.utils.AssetUtils
 import javax.inject.*
 
-class CIRecipeMockDataSource @Inject constructor(context: Context?) : EmptyReadableDataSource<String, CIRecipeModel?>() {
+class CIRecipeMockDataSource @Inject constructor(@ForActivity context: Context) : EmptyReadableDataSource<String, CIRecipeModel?>() {
 
     private var recipes: Array<CIRecipeModel>
 

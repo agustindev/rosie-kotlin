@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Cocina Inteligente</string>
 
+    <string name="app_menu_cihome_recipelist">Home</string>
+    <string name="app_menu_cihome_recipesearch">Search</string>
+    <string name="app_menu_cihome_bookmarks">Bookmarks</string>
+    <string name="app_menu_cihome_profile">Profile</string>
 </resources>

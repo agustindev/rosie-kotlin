@@ -21,13 +21,13 @@ import com.q4tech.essen.ci.domain.model.*
 import com.q4tech.essen.ci.mvp.view.CIApplication
 import javax.inject.*
 
-class CIRecipeDataSourceFactory @Inject constructor() {
+class CIRecipeDataSourceFactory @Inject constructor(private var recipeMockDataSource: CIRecipeMockDataSource, private var recipeCloudDataSource: CIRecipeCloudDataSource) {
 
     fun createDataSource(): ReadableDataSource<String, CIRecipeModel?> {
         if (true) {
-            return CIRecipeMockDataSource(CIApplication.CONTEXT)
+            return this.recipeMockDataSource
         } else {
-            return CIRecipeCloudDataSource()
+            return this.recipeCloudDataSource
         }
     }
 

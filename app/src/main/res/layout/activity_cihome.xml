@@ -8,32 +8,11 @@
         android:id="@+id/fragmentFrameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@color/white"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_above="@+id/bottomNavigationView">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/runUseCaseButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RUN USECASE"/>
-
-            <TextView
-                android:id="@+id/repositoryResultTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:padding="2dp"
-                android:text="NOTHING"/>
-
-        </LinearLayout>
 
     </FrameLayout>
 
@@ -42,9 +21,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="@color/white"
-        app:itemIconTint="@color/colorPrimary"
-        app:itemTextColor="@color/colorPrimary"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:menu="@menu/menu_cihome" />
 
 </RelativeLayout>

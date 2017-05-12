@@ -11,9 +11,7 @@ import javax.inject.Inject
  * Created by agustingandara on 5/10/17.
  */
 
-class CIHomeUseCase @Inject constructor(recipeRepository: CIRecipeRepository) : RosieUseCase() {
-
-    private var recipeRepository: CIRecipeRepository = recipeRepository
+class CIHomeUseCase @Inject constructor(private var recipeRepository: CIRecipeRepository) : RosieUseCase() {
 
     @UseCase(name = USE_CASE_SAMPLE) fun call(parameter: String){
         var recipe: CIRecipeModel? = recipeRepository.getByKey("1")

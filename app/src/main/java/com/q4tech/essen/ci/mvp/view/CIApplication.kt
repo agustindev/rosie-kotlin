@@ -15,7 +15,7 @@ class CIApplication : RosieApplication() {
     override fun onCreate() {
         super.onCreate()
         Realm.init(this)
-        CIApplication.CONTEXT = applicationContext
+        //CIApplication.CONTEXT = applicationContext
     }
 
     override fun getApplicationModules(): List<Any> {
@@ -23,7 +23,7 @@ class CIApplication : RosieApplication() {
     }
 
 
-    companion object {
+    /*companion object {
         var CONTEXT: Context? = null
-    }
+    }*/
 }

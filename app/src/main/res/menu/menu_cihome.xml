@@ -6,23 +6,23 @@
         android:enabled="true"
         android:icon="@mipmap/ic_home_black_24dp"
         app:showAsAction="ifRoom"
-        android:title=""/>
+        android:title="@string/app_menu_cihome_recipelist"/>
     <item
         android:id="@+id/actionRecipeSearch"
         android:enabled="true"
         android:icon="@mipmap/ic_search_black_24dp"
         app:showAsAction="ifRoom"
-        android:title=""/>
+        android:title="@string/app_menu_cihome_recipesearch"/>
     <item
-        android:id="@+id/actionUserNotification"
+        android:id="@+id/actionBookmarks"
         android:enabled="true"
-        android:icon="@mipmap/ic_notifications_black_24dp"
+        android:icon="@mipmap/ic_star_border_black_24dp"
         app:showAsAction="ifRoom"
-        android:title=""/>
+        android:title="@string/app_menu_cihome_bookmarks"/>
     <item
-        android:id="@+id/actionUserProfile"
+        android:id="@+id/actionProfile"
         android:enabled="true"
-        android:icon="@mipmap/ic_person_black_24dp"
+        android:icon="@mipmap/ic_person_outline_black_24dp"
         app:showAsAction="ifRoom"
-        android:title=""/>
+        android:title="@string/app_menu_cihome_profile"/>
 </menu>

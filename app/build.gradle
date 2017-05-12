@@ -40,10 +40,13 @@ dependencies {
     //google support
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support:support-v4:25.3.1'
     //connection
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.squareup.okio:okio:1.7.0'
+    //image
+    compile 'com.github.bumptech.glide:glide:3.7.0'
     //json
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.squareup.retrofit2:converter-gson:2.0.1'
